@@ -78,7 +78,7 @@ export default function MainContent() {
 
       <div className="w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-          {challenges.map((challenge, index) => (
+          {challenges.map((challenge) => (
             <Card key={challenge.id} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
                 <div className="text-3xl sm:text-4xl mb-2">{challenge.icon}</div>
