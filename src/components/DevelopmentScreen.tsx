@@ -10,17 +10,17 @@ interface DevelopmentScreenProps {
   challengeName?: string
 }
 
+const loadingMessages = [
+  "Carregando criatividade...",
+  "Compilando ideias...",
+  "Debugando a diversão...",
+  "Otimizando a experiência...",
+  "Preparando o desafio...",
+]
+
 export default function DevelopmentScreen({ challengeName = "Este desafio" }: DevelopmentScreenProps) {
   const [loadingMessage, setLoadingMessage] = useState("Carregando criatividade...")
   const [progress, setProgress] = useState(0)
-
-  const loadingMessages = [
-    "Carregando criatividade...",
-    "Compilando ideias...",
-    "Debugando a diversão...",
-    "Otimizando a experiência...",
-    "Preparando o desafio...",
-  ]
 
   useEffect(() => {
     const messageInterval = setInterval(() => {
@@ -49,7 +49,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
             scale: [1, 1.2, 1],
             opacity: [0.2, 0.4, 0.2],
           }}
-          transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
+          transition={{ duration: 4, repeat: Infinity }}
         />
         <motion.div
           className="absolute bottom-10 sm:bottom-20 right-4 sm:right-20 w-24 h-24 sm:w-40 sm:h-40 bg-primary/5 rounded-full blur-lg sm:blur-xl"
@@ -57,7 +57,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
             scale: [1.2, 1, 1.2],
             opacity: [0.1, 0.3, 0.1],
           }}
-          transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+          transition={{ duration: 3, repeat: Infinity }}
         />
         <motion.div
           className="absolute top-1/2 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-primary/10 rounded-full blur-md sm:blur-lg"
@@ -65,7 +65,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
             y: [-10, 10, -10],
             x: [-5, 5, -5],
           }}
-          transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY }}
+          transition={{ duration: 6, repeat: Infinity }}
         />
       </div>
 
@@ -82,7 +82,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
               rotate: [0, 5, -5, 0],
               scale: [1, 1.05, 1],
             }}
-            transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="bg-primary/20 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl pulse-glow">
               <Code2 size={60} className="sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 text-primary" />
@@ -96,7 +96,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
               rotate: 360,
               scale: [1, 1.2, 1],
             }}
-            transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+            transition={{ duration: 3, repeat: Infinity }}
           >
             <Sparkles size={16} className="sm:w-6 sm:h-6 text-primary" />
           </motion.div>
@@ -107,7 +107,7 @@ export default function DevelopmentScreen({ challengeName = "Este desafio" }: De
               rotate: -360,
               scale: [1.2, 1, 1.2],
             }}
-            transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
+            transition={{ duration: 4, repeat: Infinity }}
           >
             <Zap size={14} className="sm:w-5 sm:h-5 text-primary" />
           </motion.div>
