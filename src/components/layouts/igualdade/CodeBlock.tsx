@@ -45,11 +45,11 @@ export function CodeBlock({ var1, var2, expectedMessage, selectedOperator, onOpe
         {var2}) {"{"}
       </div>
       <div className="ml-4 text-green-400">
-        console.log(<span className="text-yellow-300">'{expectedMessage}'</span>)
+        console.log(<span className="text-yellow-300">&apos;{expectedMessage}&apos;</span>)
       </div>
       <div>{"} else {"}</div>
       <div className="ml-4 text-green-400">
-        console.log(<span className="text-yellow-300">'Mensagem alternativa'</span>)
+        console.log(<span className="text-yellow-300">&apos;Mensagem alternativa&apos;</span>)
       </div>
       <div>{"}"}</div>
     </div>

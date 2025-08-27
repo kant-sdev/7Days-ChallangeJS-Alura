@@ -32,9 +32,11 @@ export default function IgualdadePage() {
     let message: string
 
     if (selectedOperator === "==") {
-      result = question.var1Value as any == question.var2Value as any
+      // @ts-expect-error-next-line
+      result = question.var1Value == question.var2Value
     } else {
-      result = question.var1Value as any === question.var2Value as any
+      // @ts-expect-error-next-line
+      result = question.var1Value === question.var2Value
     }
 
     if (question.id === 1) {
