@@ -1,10 +1,7 @@
-import DevelopmentScreen from '@/components/DevelopmentScreen'
-import React from 'react'
+"use client"
 
-export default function page() {
-  return (
-    <div className='w-full h-screen'>
-      <DevelopmentScreen/>
-    </div>
-  )
+import QuestionarioForm from "@/components/layouts/questionario/QuestionaryForm";
+
+export default function QuestionarioPage() {
+  return <QuestionarioForm />;
 }
