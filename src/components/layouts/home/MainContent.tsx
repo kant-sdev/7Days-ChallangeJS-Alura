@@ -10,7 +10,7 @@ const challenges = [
     id: 1,
     title: "Igualdade",
     description: "Aprenda diferença entre == e ===",
-    icon: "🟰",
+    icon: "⚖",
     href: "/desafio/igualdade",
   },
   {
