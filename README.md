@@ -10,10 +10,10 @@ Este projeto foi desenvolvido para ajudar estudantes e desenvolvedores a pratica
 
 ### ✅ Implementados
 - **🟰 Igualdade** - Aprenda a diferença entre `==` e `===` com exemplos práticos e feedback visual
-
-### 🚧 Em Desenvolvimento
 - **❓ Questionário** - Sistema de perguntas e respostas
 - **🎮 Jogo de Carreira** - Simulador de escolhas profissionais
+
+### 🚧 Em Desenvolvimento
 - **🔮 Adivinhação** - Jogo de adivinhar números
 - **🛒 Lista Compras** - Gerenciador de lista de compras
 - **🗑️ Remover da Lista** - Manipulação de arrays e elementos
@@ -109,8 +109,8 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📝 Roadmap
 
-- [ ] Implementar desafio de Questionário
-- [ ] Implementar Jogo de Carreira
+- [✅] Implementar desafio de Questionário
+- [✅] Implementar Jogo de Carreira
 - [ ] Implementar desafio de Adivinhação
 - [ ] Implementar Lista de Compras
 - [ ] Implementar Remover da Lista
