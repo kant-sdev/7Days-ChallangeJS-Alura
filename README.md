@@ -38,8 +38,8 @@ Este projeto foi desenvolvido para ajudar estudantes e desenvolvedores a pratica
 
 1. Clone o repositório:
 ```bash
-git clone <url-do-repositorio>
-cd desafios-logica-javascript
+git clone https://github.com/kant-sdev/7Days-ChallangeJS-Alura
+cd 7Days-ChallangeJS-Alura
 ```
 
 2. Instale as dependências:
